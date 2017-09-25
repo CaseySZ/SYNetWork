@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/sunyong445"
   
   s.platform     = :ios, "7.0" #平台及支持的最低版本
-  s.source       = { :git => "https://github.com/sunyong445/SYNetWork.git", :tag => "v#{s.version}" }
+  s.source       = { :git => "https://github.com/sunyong445/SYNetWorkDemo.git", :tag => "v#{s.version}" }
   
   s.source_files = "SYNetWorkDemo/SYNetWork/*.{h,m}"
   
