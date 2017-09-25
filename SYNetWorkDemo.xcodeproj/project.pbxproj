@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DB4B4A01F78F777006EB81F /* SYNetWork.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 3DB4B49F1F78F777006EB81F /* SYNetWork.podspec */; };
 		3DC7C1111F78F48100E03E0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7C1101F78F48100E03E0A /* AppDelegate.m */; };
 		3DC7C1141F78F48100E03E0A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7C1131F78F48100E03E0A /* ViewController.m */; };
 		3DC7C1171F78F48100E03E0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC7C1151F78F48100E03E0A /* Main.storyboard */; };
@@ -18,12 +19,13 @@
 		3DC7C1301F78F51800E03E0A /* SYNetMananger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7C12B1F78F51800E03E0A /* SYNetMananger.m */; };
 		3DC7C1311F78F51800E03E0A /* SYNetRequestInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7C12D1F78F51800E03E0A /* SYNetRequestInfo.m */; };
 		3DC7C1341F78F64000E03E0A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3DC7C1321F78F64000E03E0A /* README.md */; };
-		3DC7C1351F78F64000E03E0A /* SYNetWorkDemo.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = 3DC7C1331F78F64000E03E0A /* SYNetWorkDemo.xcworkspace */; };
 		A717E6926C37648C456C55B2 /* libPods-SYNetWorkDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BACEE2017E58E1881074E319 /* libPods-SYNetWorkDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3D02B783032826DAD9ACD639 /* Pods-SYNetWorkDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYNetWorkDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SYNetWorkDemo/Pods-SYNetWorkDemo.release.xcconfig"; sourceTree = "<group>"; };
+		3DB4B49E1F78F711006EB81F /* YYText.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = YYText.podspec; path = "../../Demo/YYText-master-2/YYText.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3DB4B49F1F78F777006EB81F /* SYNetWork.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SYNetWork.podspec; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3DC7C10C1F78F48100E03E0A /* SYNetWorkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYNetWorkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC7C10F1F78F48100E03E0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3DC7C1101F78F48100E03E0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -43,7 +45,6 @@
 		3DC7C12C1F78F51800E03E0A /* SYNetRequestInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYNetRequestInfo.h; sourceTree = "<group>"; };
 		3DC7C12D1F78F51800E03E0A /* SYNetRequestInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYNetRequestInfo.m; sourceTree = "<group>"; };
 		3DC7C1321F78F64000E03E0A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
-		3DC7C1331F78F64000E03E0A /* SYNetWorkDemo.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = SYNetWorkDemo.xcworkspace; sourceTree = SOURCE_ROOT; };
 		BACEE2017E58E1881074E319 /* libPods-SYNetWorkDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SYNetWorkDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2EDCB0488C152B05F4387A4 /* Pods-SYNetWorkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYNetWorkDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SYNetWorkDemo/Pods-SYNetWorkDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,7 +110,8 @@
 				3DC7C11D1F78F48100E03E0A /* Info.plist */,
 				3DC7C11E1F78F48100E03E0A /* main.m */,
 				3DC7C1321F78F64000E03E0A /* README.md */,
-				3DC7C1331F78F64000E03E0A /* SYNetWorkDemo.xcworkspace */,
+				3DB4B49E1F78F711006EB81F /* YYText.podspec */,
+				3DB4B49F1F78F777006EB81F /* SYNetWork.podspec */,
 			);
 			path = SYNetWorkDemo;
 			sourceTree = "<group>";
@@ -191,9 +193,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DC7C11C1F78F48100E03E0A /* LaunchScreen.storyboard in Resources */,
-				3DC7C1351F78F64000E03E0A /* SYNetWorkDemo.xcworkspace in Resources */,
 				3DC7C1191F78F48100E03E0A /* Assets.xcassets in Resources */,
 				3DC7C1341F78F64000E03E0A /* README.md in Resources */,
+				3DB4B4A01F78F777006EB81F /* SYNetWork.podspec in Resources */,
 				3DC7C1171F78F48100E03E0A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
