@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DC7C1111F78F48100E03E0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7C1101F78F48100E03E0A /* AppDelegate.m */; };
+		3DC7C1141F78F48100E03E0A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7C1131F78F48100E03E0A /* ViewController.m */; };
+		3DC7C1171F78F48100E03E0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC7C1151F78F48100E03E0A /* Main.storyboard */; };
+		3DC7C1191F78F48100E03E0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC7C1181F78F48100E03E0A /* Assets.xcassets */; };
+		3DC7C11C1F78F48100E03E0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC7C11A1F78F48100E03E0A /* LaunchScreen.storyboard */; };
+		3DC7C11F1F78F48100E03E0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7C11E1F78F48100E03E0A /* main.m */; };
+		3DC7C12E1F78F51800E03E0A /* SYMD5DataConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7C1271F78F51800E03E0A /* SYMD5DataConvert.m */; };
+		3DC7C12F1F78F51800E03E0A /* SYNetLocalCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7C1291F78F51800E03E0A /* SYNetLocalCache.m */; };
+		3DC7C1301F78F51800E03E0A /* SYNetMananger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7C12B1F78F51800E03E0A /* SYNetMananger.m */; };
+		3DC7C1311F78F51800E03E0A /* SYNetRequestInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7C12D1F78F51800E03E0A /* SYNetRequestInfo.m */; };
+		3DC7C1341F78F64000E03E0A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3DC7C1321F78F64000E03E0A /* README.md */; };
+		3DC7C1351F78F64000E03E0A /* SYNetWorkDemo.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = 3DC7C1331F78F64000E03E0A /* SYNetWorkDemo.xcworkspace */; };
+		A717E6926C37648C456C55B2 /* libPods-SYNetWorkDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BACEE2017E58E1881074E319 /* libPods-SYNetWorkDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D02B783032826DAD9ACD639 /* Pods-SYNetWorkDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYNetWorkDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SYNetWorkDemo/Pods-SYNetWorkDemo.release.xcconfig"; sourceTree = "<group>"; };
+		3DC7C10C1F78F48100E03E0A /* SYNetWorkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYNetWorkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DC7C10F1F78F48100E03E0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3DC7C1101F78F48100E03E0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3DC7C1121F78F48100E03E0A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3DC7C1131F78F48100E03E0A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3DC7C1161F78F48100E03E0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DC7C1181F78F48100E03E0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DC7C11B1F78F48100E03E0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3DC7C11D1F78F48100E03E0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DC7C11E1F78F48100E03E0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3DC7C1261F78F51800E03E0A /* SYMD5DataConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYMD5DataConvert.h; sourceTree = "<group>"; };
+		3DC7C1271F78F51800E03E0A /* SYMD5DataConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYMD5DataConvert.m; sourceTree = "<group>"; };
+		3DC7C1281F78F51800E03E0A /* SYNetLocalCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYNetLocalCache.h; sourceTree = "<group>"; };
+		3DC7C1291F78F51800E03E0A /* SYNetLocalCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYNetLocalCache.m; sourceTree = "<group>"; };
+		3DC7C12A1F78F51800E03E0A /* SYNetMananger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYNetMananger.h; sourceTree = "<group>"; };
+		3DC7C12B1F78F51800E03E0A /* SYNetMananger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYNetMananger.m; sourceTree = "<group>"; };
+		3DC7C12C1F78F51800E03E0A /* SYNetRequestInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYNetRequestInfo.h; sourceTree = "<group>"; };
+		3DC7C12D1F78F51800E03E0A /* SYNetRequestInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYNetRequestInfo.m; sourceTree = "<group>"; };
+		3DC7C1321F78F64000E03E0A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		3DC7C1331F78F64000E03E0A /* SYNetWorkDemo.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = SYNetWorkDemo.xcworkspace; sourceTree = SOURCE_ROOT; };
+		BACEE2017E58E1881074E319 /* libPods-SYNetWorkDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SYNetWorkDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2EDCB0488C152B05F4387A4 /* Pods-SYNetWorkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYNetWorkDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SYNetWorkDemo/Pods-SYNetWorkDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DC7C1091F78F48100E03E0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A717E6926C37648C456C55B2 /* libPods-SYNetWorkDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1502D607E8A7A882A5776C86 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2EDCB0488C152B05F4387A4 /* Pods-SYNetWorkDemo.debug.xcconfig */,
+				3D02B783032826DAD9ACD639 /* Pods-SYNetWorkDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2B8FB89E805C7A527442D4A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BACEE2017E58E1881074E319 /* libPods-SYNetWorkDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3DC7C1031F78F48100E03E0A = {
+			isa = PBXGroup;
+			children = (
+				3DC7C10E1F78F48100E03E0A /* SYNetWorkDemo */,
+				3DC7C10D1F78F48100E03E0A /* Products */,
+				1502D607E8A7A882A5776C86 /* Pods */,
+				2B8FB89E805C7A527442D4A5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3DC7C10D1F78F48100E03E0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DC7C10C1F78F48100E03E0A /* SYNetWorkDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DC7C10E1F78F48100E03E0A /* SYNetWorkDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3DC7C1251F78F51800E03E0A /* SYNetWork */,
+				3DC7C10F1F78F48100E03E0A /* AppDelegate.h */,
+				3DC7C1101F78F48100E03E0A /* AppDelegate.m */,
+				3DC7C1121F78F48100E03E0A /* ViewController.h */,
+				3DC7C1131F78F48100E03E0A /* ViewController.m */,
+				3DC7C1151F78F48100E03E0A /* Main.storyboard */,
+				3DC7C1181F78F48100E03E0A /* Assets.xcassets */,
+				3DC7C11A1F78F48100E03E0A /* LaunchScreen.storyboard */,
+				3DC7C11D1F78F48100E03E0A /* Info.plist */,
+				3DC7C11E1F78F48100E03E0A /* main.m */,
+				3DC7C1321F78F64000E03E0A /* README.md */,
+				3DC7C1331F78F64000E03E0A /* SYNetWorkDemo.xcworkspace */,
+			);
+			path = SYNetWorkDemo;
+			sourceTree = "<group>";
+		};
+		3DC7C1251F78F51800E03E0A /* SYNetWork */ = {
+			isa = PBXGroup;
+			children = (
+				3DC7C1261F78F51800E03E0A /* SYMD5DataConvert.h */,
+				3DC7C1271F78F51800E03E0A /* SYMD5DataConvert.m */,
+				3DC7C1281F78F51800E03E0A /* SYNetLocalCache.h */,
+				3DC7C1291F78F51800E03E0A /* SYNetLocalCache.m */,
+				3DC7C12A1F78F51800E03E0A /* SYNetMananger.h */,
+				3DC7C12B1F78F51800E03E0A /* SYNetMananger.m */,
+				3DC7C12C1F78F51800E03E0A /* SYNetRequestInfo.h */,
+				3DC7C12D1F78F51800E03E0A /* SYNetRequestInfo.m */,
+			);
+			path = SYNetWork;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DC7C10B1F78F48100E03E0A /* SYNetWorkDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DC7C1221F78F48100E03E0A /* Build configuration list for PBXNativeTarget "SYNetWorkDemo" */;
+			buildPhases = (
+				0E241CEE220932FCD0270B60 /* [CP] Check Pods Manifest.lock */,
+				3DC7C1081F78F48100E03E0A /* Sources */,
+				3DC7C1091F78F48100E03E0A /* Frameworks */,
+				3DC7C10A1F78F48100E03E0A /* Resources */,
+				8327185EF1E7AF3D539E582C /* [CP] Embed Pods Frameworks */,
+				AE209B0A12B21DC31FCBF0A7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SYNetWorkDemo;
+			productName = SYNetWorkDemo;
+			productReference = 3DC7C10C1F78F48100E03E0A /* SYNetWorkDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DC7C1041F78F48100E03E0A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = SunYong;
+				TargetAttributes = {
+					3DC7C10B1F78F48100E03E0A = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3DC7C1071F78F48100E03E0A /* Build configuration list for PBXProject "SYNetWorkDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DC7C1031F78F48100E03E0A;
+			productRefGroup = 3DC7C10D1F78F48100E03E0A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DC7C10B1F78F48100E03E0A /* SYNetWorkDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DC7C10A1F78F48100E03E0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC7C11C1F78F48100E03E0A /* LaunchScreen.storyboard in Resources */,
+				3DC7C1351F78F64000E03E0A /* SYNetWorkDemo.xcworkspace in Resources */,
+				3DC7C1191F78F48100E03E0A /* Assets.xcassets in Resources */,
+				3DC7C1341F78F64000E03E0A /* README.md in Resources */,
+				3DC7C1171F78F48100E03E0A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E241CEE220932FCD0270B60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SYNetWorkDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8327185EF1E7AF3D539E582C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SYNetWorkDemo/Pods-SYNetWorkDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE209B0A12B21DC31FCBF0A7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SYNetWorkDemo/Pods-SYNetWorkDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DC7C1081F78F48100E03E0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC7C1141F78F48100E03E0A /* ViewController.m in Sources */,
+				3DC7C12F1F78F51800E03E0A /* SYNetLocalCache.m in Sources */,
+				3DC7C1301F78F51800E03E0A /* SYNetMananger.m in Sources */,
+				3DC7C1311F78F51800E03E0A /* SYNetRequestInfo.m in Sources */,
+				3DC7C11F1F78F48100E03E0A /* main.m in Sources */,
+				3DC7C12E1F78F51800E03E0A /* SYMD5DataConvert.m in Sources */,
+				3DC7C1111F78F48100E03E0A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3DC7C1151F78F48100E03E0A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DC7C1161F78F48100E03E0A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3DC7C11A1F78F48100E03E0A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DC7C11B1F78F48100E03E0A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DC7C1201F78F48100E03E0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3DC7C1211F78F48100E03E0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DC7C1231F78F48100E03E0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2EDCB0488C152B05F4387A4 /* Pods-SYNetWorkDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SYNetWorkDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com..SYNetWorkDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3DC7C1241F78F48100E03E0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D02B783032826DAD9ACD639 /* Pods-SYNetWorkDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SYNetWorkDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com..SYNetWorkDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DC7C1071F78F48100E03E0A /* Build configuration list for PBXProject "SYNetWorkDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DC7C1201F78F48100E03E0A /* Debug */,
+				3DC7C1211F78F48100E03E0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DC7C1221F78F48100E03E0A /* Build configuration list for PBXNativeTarget "SYNetWorkDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DC7C1231F78F48100E03E0A /* Debug */,
+				3DC7C1241F78F48100E03E0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DC7C1041F78F48100E03E0A /* Project object */;
+}
