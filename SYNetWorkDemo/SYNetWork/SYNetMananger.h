@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-
+#define NetCacheDuration 60*60*24*30
 
 
 @interface SYNetMananger : NSObject
@@ -22,10 +22,19 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  外部添加异常处理 （根据服务器返回的数据，统一处理，如处理登录实效），默认不做处理
  */
+// 配置网络异常处理(具体用法看demo)
 @property (nonatomic, copy)SYRequestCompletionAddExcepetionHanle exceptionBlock;
 
+// 配置网络缓存条件(如 网络异常数据不需要被缓存，block返回NO即可, 具体用法看demo)
+@property (nonatomic, copy)SYRequestCompletionAddCacheCondition cacheConditionBlock;
 
 
+// 默认缓存
+- (void)sunyRequestWithMethod:(NSString *)method
+                    urlString:(NSString*)urlString
+                   parameters:(NSDictionary * _Nullable)parameters
+            completionHandler:(SYRequestCompletionHandler)completionHandler;
+    
 /**
  POST请求
 
@@ -36,7 +45,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param completionHandler 请求结果处理
  */
 - (void)sunyPostWithURLString:(NSString *)URLString
-               parameters:(NSDictionary *)parameters
+               parameters:(NSDictionary * _Nullable)parameters
               ignoreCache:(BOOL)ignoreCache
             cacheDuration:(NSTimeInterval)cacheDuration
         completionHandler:(SYRequestCompletionHandler)completionHandler;

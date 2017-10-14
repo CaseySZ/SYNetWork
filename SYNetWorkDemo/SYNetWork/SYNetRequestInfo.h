@@ -11,12 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef void (^SYRequestCompletionHandler)( NSError* _Nullable error,  BOOL isCache, NSDictionary* _Nullable result);
-
 typedef void (^netSuccessbatchBlock)(NSArray *operationAry);
-
-typedef void (^SYRequestCompletionAddExcepetionHanle)(NSError* _Nullable errror,  NSDictionary *result);
-
-
+typedef BOOL (^SYRequestCompletionAddCacheCondition)(NSDictionary *result);
 @interface SYNetRequestInfo : NSObject
 
 @property(nonatomic, strong)NSString *urlStr;
@@ -27,5 +23,7 @@ typedef void (^SYRequestCompletionAddExcepetionHanle)(NSError* _Nullable errror,
 @property(nonatomic, copy)SYRequestCompletionHandler completionBlock;
 
 NS_ASSUME_NONNULL_END
+
+typedef void (^SYRequestCompletionAddExcepetionHanle)(NSError* _Nullable errror,  NSMutableDictionary* result);
 
 @end

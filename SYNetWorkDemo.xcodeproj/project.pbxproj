@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3DB4B4A01F78F777006EB81F /* SYNetWork.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 3DB4B49F1F78F777006EB81F /* SYNetWork.podspec */; };
+		3D86D8B81F91AC5800D40DAA /* AppDelegate+NetCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D86D8B51F91AC5800D40DAA /* AppDelegate+NetCache.m */; };
+		3D86D8B91F91AC5800D40DAA /* AppDelegate+NetException.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D86D8B71F91AC5800D40DAA /* AppDelegate+NetException.m */; };
+		3DB4B4A21F78FB6B006EB81F /* SYNetWorkDemo.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 3DB4B4A11F78FB6B006EB81F /* SYNetWorkDemo.podspec */; };
 		3DC7C1111F78F48100E03E0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7C1101F78F48100E03E0A /* AppDelegate.m */; };
 		3DC7C1141F78F48100E03E0A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7C1131F78F48100E03E0A /* ViewController.m */; };
 		3DC7C1171F78F48100E03E0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC7C1151F78F48100E03E0A /* Main.storyboard */; };
@@ -24,8 +26,11 @@
 
 /* Begin PBXFileReference section */
 		3D02B783032826DAD9ACD639 /* Pods-SYNetWorkDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYNetWorkDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SYNetWorkDemo/Pods-SYNetWorkDemo.release.xcconfig"; sourceTree = "<group>"; };
-		3DB4B49E1F78F711006EB81F /* YYText.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = YYText.podspec; path = "../../Demo/YYText-master-2/YYText.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		3DB4B49F1F78F777006EB81F /* SYNetWork.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SYNetWork.podspec; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3D86D8B41F91AC5800D40DAA /* AppDelegate+NetCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+NetCache.h"; sourceTree = "<group>"; };
+		3D86D8B51F91AC5800D40DAA /* AppDelegate+NetCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+NetCache.m"; sourceTree = "<group>"; };
+		3D86D8B61F91AC5800D40DAA /* AppDelegate+NetException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+NetException.h"; sourceTree = "<group>"; };
+		3D86D8B71F91AC5800D40DAA /* AppDelegate+NetException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+NetException.m"; sourceTree = "<group>"; };
+		3DB4B4A11F78FB6B006EB81F /* SYNetWorkDemo.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SYNetWorkDemo.podspec; sourceTree = SOURCE_ROOT; };
 		3DC7C10C1F78F48100E03E0A /* SYNetWorkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYNetWorkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC7C10F1F78F48100E03E0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3DC7C1101F78F48100E03E0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,6 +83,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3D86D8B31F91AC5800D40DAA /* 根据自己业务处理网络异常用法 */ = {
+			isa = PBXGroup;
+			children = (
+				3D86D8B41F91AC5800D40DAA /* AppDelegate+NetCache.h */,
+				3D86D8B51F91AC5800D40DAA /* AppDelegate+NetCache.m */,
+				3D86D8B61F91AC5800D40DAA /* AppDelegate+NetException.h */,
+				3D86D8B71F91AC5800D40DAA /* AppDelegate+NetException.m */,
+			);
+			path = "根据自己业务处理网络异常用法";
+			sourceTree = "<group>";
+		};
 		3DC7C1031F78F48100E03E0A = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +115,7 @@
 		3DC7C10E1F78F48100E03E0A /* SYNetWorkDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3D86D8B31F91AC5800D40DAA /* 根据自己业务处理网络异常用法 */,
 				3DC7C1251F78F51800E03E0A /* SYNetWork */,
 				3DC7C10F1F78F48100E03E0A /* AppDelegate.h */,
 				3DC7C1101F78F48100E03E0A /* AppDelegate.m */,
@@ -110,8 +127,7 @@
 				3DC7C11D1F78F48100E03E0A /* Info.plist */,
 				3DC7C11E1F78F48100E03E0A /* main.m */,
 				3DC7C1321F78F64000E03E0A /* README.md */,
-				3DB4B49E1F78F711006EB81F /* YYText.podspec */,
-				3DB4B49F1F78F777006EB81F /* SYNetWork.podspec */,
+				3DB4B4A11F78FB6B006EB81F /* SYNetWorkDemo.podspec */,
 			);
 			path = SYNetWorkDemo;
 			sourceTree = "<group>";
@@ -119,12 +135,12 @@
 		3DC7C1251F78F51800E03E0A /* SYNetWork */ = {
 			isa = PBXGroup;
 			children = (
+				3DC7C12A1F78F51800E03E0A /* SYNetMananger.h */,
+				3DC7C12B1F78F51800E03E0A /* SYNetMananger.m */,
 				3DC7C1261F78F51800E03E0A /* SYMD5DataConvert.h */,
 				3DC7C1271F78F51800E03E0A /* SYMD5DataConvert.m */,
 				3DC7C1281F78F51800E03E0A /* SYNetLocalCache.h */,
 				3DC7C1291F78F51800E03E0A /* SYNetLocalCache.m */,
-				3DC7C12A1F78F51800E03E0A /* SYNetMananger.h */,
-				3DC7C12B1F78F51800E03E0A /* SYNetMananger.m */,
 				3DC7C12C1F78F51800E03E0A /* SYNetRequestInfo.h */,
 				3DC7C12D1F78F51800E03E0A /* SYNetRequestInfo.m */,
 			);
@@ -193,9 +209,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DC7C11C1F78F48100E03E0A /* LaunchScreen.storyboard in Resources */,
+				3DB4B4A21F78FB6B006EB81F /* SYNetWorkDemo.podspec in Resources */,
 				3DC7C1191F78F48100E03E0A /* Assets.xcassets in Resources */,
 				3DC7C1341F78F64000E03E0A /* README.md in Resources */,
-				3DB4B4A01F78F777006EB81F /* SYNetWork.podspec in Resources */,
 				3DC7C1171F78F48100E03E0A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +277,8 @@
 				3DC7C1141F78F48100E03E0A /* ViewController.m in Sources */,
 				3DC7C12F1F78F51800E03E0A /* SYNetLocalCache.m in Sources */,
 				3DC7C1301F78F51800E03E0A /* SYNetMananger.m in Sources */,
+				3D86D8B81F91AC5800D40DAA /* AppDelegate+NetCache.m in Sources */,
+				3D86D8B91F91AC5800D40DAA /* AppDelegate+NetException.m in Sources */,
 				3DC7C1311F78F51800E03E0A /* SYNetRequestInfo.m in Sources */,
 				3DC7C11F1F78F48100E03E0A /* main.m in Sources */,
 				3DC7C12E1F78F51800E03E0A /* SYMD5DataConvert.m in Sources */,

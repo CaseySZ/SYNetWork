@@ -11,6 +11,7 @@
 
 #import "AFNetworking.h"
 
+#define NetCacheDuration 60*60*24*30
 
 extern NSString *SYConvertMD5FromParameter(NSString *url, NSString* method, NSDictionary* paramDict);
 
@@ -51,8 +52,23 @@ NS_ASSUME_NONNULL_BEGIN
     return instance;
 }
 
+- (void)sunyRequestWithMethod:(NSString *)method
+                    urlString:(NSString*)urlString
+                   parameters:(NSDictionary * _Nullable)parameters
+                completionHandler:(SYRequestCompletionHandler)completionHandler{
+    
+    if([method isEqualToString:@"GET"]){
+        
+        [self sunyGetWithURLString:urlString parameters:parameters ignoreCache:NO cacheDuration:NetCacheDuration completionHandler:completionHandler];
+        
+    }else{
+        
+        [self sunyPostWithURLString:urlString parameters:parameters ignoreCache:NO cacheDuration:NetCacheDuration completionHandler:completionHandler];
+    }
+    
+}
 - (void)sunyPostWithURLString:(NSString *)URLString
-               parameters:(NSDictionary *)parameters
+               parameters:(NSDictionary * _Nullable)parameters
               ignoreCache:(BOOL)ignoreCache
             cacheDuration:(NSTimeInterval)cacheDuration
         completionHandler:(SYRequestCompletionHandler)completionHandler{
@@ -96,13 +112,15 @@ NS_ASSUME_NONNULL_BEGIN
     
     if (!ignoreCache && [self.cache checkIfShouldSkipCacheWithCacheDuration:cacheDuration cacheKey:fileKeyFromUrl]) {
         
-        id localCache = [self.cache searchCacheWithUrl:fileKeyFromUrl];
-        if (localCache) {
+        NSMutableDictionary *localCache = [NSMutableDictionary dictionary];
+        NSDictionary *cacheDict = [self.cache searchCacheWithUrl:fileKeyFromUrl];
+        [localCache setDictionary:cacheDict];
+        if (cacheDict) {
             
             dispatch_async(dispatch_get_main_queue(), ^{
                 
                 if (weakSelf.exceptionBlock) {
-                    weakSelf.exceptionBlock(NULL,localCache);
+                    weakSelf.exceptionBlock(nil, localCache);
                 }
                 completionHandler(nil, YES, localCache);
             });
@@ -114,16 +132,23 @@ NS_ASSUME_NONNULL_BEGIN
     
     SYRequestCompletionHandler newCompletionBlock = ^( NSError* error,  BOOL isCache, NSDictionary* result){
         
+        result = [NSMutableDictionary dictionaryWithDictionary:result];
         if (cacheDuration > 0) {
             if (result) {
-                [weakSelf.cache saveCacheData:result forKey:fileKeyFromUrl];
+                if (weakSelf.cacheConditionBlock) {
+                    if (weakSelf.cacheConditionBlock(result)) {
+                        [weakSelf.cache saveCacheData:result forKey:fileKeyFromUrl];
+                    }
+                }else{
+                    [weakSelf.cache saveCacheData:result forKey:fileKeyFromUrl];
+                }
             }
         }
         
         dispatch_async(dispatch_get_main_queue(), ^{
             
             if (weakSelf.exceptionBlock) {
-                weakSelf.exceptionBlock(error, result);
+                weakSelf.exceptionBlock(error, (NSMutableDictionary*)result);
             }
             completionHandler(error, NO, result);
         });
@@ -134,19 +159,7 @@ NS_ASSUME_NONNULL_BEGIN
     NSURLSessionTask *task = nil;
     if ([method isEqualToString:@"GET"]) {
         
-        task = [[AFHTTPSessionManager manager] POST:urlStr parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-            
-            newCompletionBlock(nil,NO, responseObject);
-            
-        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-            
-            newCompletionBlock(error,NO, nil);
-        }];
-        
-        
-    }else{
-        
-        task = [[AFHTTPSessionManager manager] GET:urlStr parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        task = [self.afHttpManager  GET:urlStr parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             
             newCompletionBlock(nil,NO, responseObject);
             
@@ -155,11 +168,27 @@ NS_ASSUME_NONNULL_BEGIN
             newCompletionBlock(error,NO, nil);;
         }];
         
+    }else{
+        
+        task = [self.afHttpManager POST:urlStr parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            
+            newCompletionBlock(nil,NO, responseObject);
+            
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            
+            newCompletionBlock(error,NO, nil);
+        }];
+        
     }
     
     [task resume];
 }
 
+- (AFHTTPSessionManager*)afHttpManager{
+    
+    AFHTTPSessionManager *afManager = [[AFHTTPSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration ephemeralSessionConfiguration]];
+    return afManager;
+}
 
 - (SYNetRequestInfo*)sunyNetRequestWithURLStr:(NSString *)URLString
                                      method:(NSString*)method
