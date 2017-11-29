@@ -22,7 +22,8 @@
         
         // 统一处理网络异常错误信息
         if(error && [result allKeys].count == 0){
-            
+            // 这个地方就可以在内部不需要去判断error，统一直接判断result相关信息
+            // result错误信息配置
             [result setObject:error.localizedDescription forKey:@"msg"];
         }
         // (单点登录)登录异常处理
