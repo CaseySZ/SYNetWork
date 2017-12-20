@@ -8,10 +8,8 @@
 
 #import "SYNetMananger.h"
 #import "SYNetLocalCache.h"
-
 #import "AFNetworking.h"
 
-#define NetCacheDuration 60*60*24*30
 
 extern NSString *SYConvertMD5FromParameter(NSString *url, NSString* method, NSDictionary* paramDict);
 
@@ -52,27 +50,43 @@ NS_ASSUME_NONNULL_BEGIN
     return instance;
 }
 
-- (void)sunyRequestWithMethod:(NSString *)method
-                    urlString:(NSString*)urlString
-                   parameters:(NSDictionary * _Nullable)parameters
-                completionHandler:(SYRequestCompletionHandler)completionHandler{
+- (void)syGetCacheWithUrl:(NSString*)urlString
+               parameters:(NSDictionary * _Nullable)parameters
+        completionHandler:(SYRequestCompletionHandler)completionHandler{
     
-    if([method isEqualToString:@"GET"]){
-        
-        [self sunyGetWithURLString:urlString parameters:parameters ignoreCache:NO cacheDuration:NetCacheDuration completionHandler:completionHandler];
-        
-    }else{
-        
-        [self sunyPostWithURLString:urlString parameters:parameters ignoreCache:NO cacheDuration:NetCacheDuration completionHandler:completionHandler];
-    }
-    
+        [self syGetWithURLString:urlString parameters:parameters ignoreCache:NO cacheDuration:NetCacheDuration completionHandler:completionHandler];
 }
-- (void)sunyPostWithURLString:(NSString *)URLString
+
+
+- (void)syPostCacheWithUrl:(NSString*)urlString
+                parameters:(NSDictionary * _Nullable)parameters
+         completionHandler:(SYRequestCompletionHandler)completionHandler{
+    
+    [self syPostWithURLString:urlString parameters:parameters ignoreCache:NO cacheDuration:NetCacheDuration completionHandler:completionHandler];
+}
+
+
+- (void)syPostNoCacheWithUrl:(NSString*)urlString
+                  parameters:(NSDictionary * _Nullable)parameters
+           completionHandler:(SYRequestCompletionHandler)completionHandler{
+        
+     [self syPostWithURLString:urlString parameters:parameters ignoreCache:YES cacheDuration:0 completionHandler:completionHandler];
+
+}
+
+- (void)syGetNoCacheWithUrl:(NSString*)urlString
+                 parameters:(NSDictionary * _Nullable)parameters
+          completionHandler:(SYRequestCompletionHandler)completionHandler{
+    
+    [self syGetWithURLString:urlString parameters:parameters ignoreCache:YES cacheDuration:0 completionHandler:completionHandler];
+}
+
+
+- (void)syPostWithURLString:(NSString *)URLString
                parameters:(NSDictionary * _Nullable)parameters
               ignoreCache:(BOOL)ignoreCache
             cacheDuration:(NSTimeInterval)cacheDuration
         completionHandler:(SYRequestCompletionHandler)completionHandler{
-    
     
     __weak typeof(self) weakSelf = self;
     dispatch_async(_SYNetQueue, ^{
@@ -82,7 +96,7 @@ NS_ASSUME_NONNULL_BEGIN
     
 }
 
-- (void)sunyGetWithURLString:(NSString *)URLString
+- (void)syGetWithURLString:(NSString *)URLString
               parameters:(NSDictionary *)parameters
              ignoreCache:(BOOL)ignoreCache
            cacheDuration:(NSTimeInterval)cacheDuration
@@ -128,10 +142,8 @@ NS_ASSUME_NONNULL_BEGIN
         }
     }
     
-    
-    
     SYRequestCompletionHandler newCompletionBlock = ^( NSError* error,  BOOL isCache, NSDictionary* result){
-        
+       
         result = [NSMutableDictionary dictionaryWithDictionary:result];
         if (cacheDuration > 0) {
             if (result) {
@@ -190,7 +202,7 @@ NS_ASSUME_NONNULL_BEGIN
     return afManager;
 }
 
-- (SYNetRequestInfo*)sunyNetRequestWithURLStr:(NSString *)URLString
+- (SYNetRequestInfo*)syNetRequestWithURLStr:(NSString *)URLString
                                      method:(NSString*)method
                                  parameters:(NSDictionary *)parameters
                                 ignoreCache:(BOOL)ignoreCache
@@ -207,10 +219,7 @@ NS_ASSUME_NONNULL_BEGIN
     return syNetRequestInfo;
 }
 
-
-
-
-- (void)sunyBatchOfRequestOperations:(NSArray<SYNetRequestInfo *> *)tasks
+- (void)syBatchOfRequestOperations:(NSArray<SYNetRequestInfo *> *)tasks
                    progressBlock:(void (^)(NSUInteger numberOfFinishedTasks, NSUInteger totalNumberOfTasks))progressBlock
                  completionBlock:(netSuccessbatchBlock)completionBlock{
     
@@ -241,11 +250,11 @@ NS_ASSUME_NONNULL_BEGIN
                 };
                 if ([obj.method isEqual:@"POST"]) {
                     
-                    [[SYNetMananger sharedInstance] sunyPostWithURLString:obj.urlStr parameters:obj.parameters ignoreCache:obj.ignoreCache cacheDuration:obj.cacheDuration completionHandler:newCompletionBlock];
+                    [[SYNetMananger sharedInstance] syPostWithURLString:obj.urlStr parameters:obj.parameters ignoreCache:obj.ignoreCache cacheDuration:obj.cacheDuration completionHandler:newCompletionBlock];
                     
                 }else{
                     
-                    [[SYNetMananger sharedInstance] sunyGetWithURLString:obj.urlStr parameters:obj.parameters ignoreCache:obj.ignoreCache cacheDuration:obj.cacheDuration completionHandler:newCompletionBlock];
+                    [[SYNetMananger sharedInstance] syGetWithURLString:obj.urlStr parameters:obj.parameters ignoreCache:obj.ignoreCache cacheDuration:obj.cacheDuration completionHandler:newCompletionBlock];
                 }
                 
             }
@@ -262,10 +271,7 @@ NS_ASSUME_NONNULL_BEGIN
                 completionBlock(tasks);
             }
         });
-        
     });
-    
-    
 }
 
 @end

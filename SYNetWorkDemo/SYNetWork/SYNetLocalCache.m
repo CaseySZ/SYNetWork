@@ -71,7 +71,6 @@ static const NSInteger SYDefaultCacheMaxDeadline = 60 * 60 * 24 * 30; // 1 个�
     return self;
 }
 
-
 #pragma mark - Notification handle
 -(void)removeAllObjects{
     [_memoryCache removeAllObjects];
@@ -164,6 +163,9 @@ static const NSInteger SYDefaultCacheMaxDeadline = 60 * 60 * 24 * 30; // 1 个�
         BOOL written = [NSKeyedArchiver archiveRootObject:data toFile:filePath];
         if (!written) {
             NSLog(@"写入缓存失败");
+        }else {
+            NSLog(@"写入缓存成功");
+            
         }
     });
     
@@ -203,6 +205,8 @@ static const NSInteger SYDefaultCacheMaxDeadline = 60 * 60 * 24 * 30; // 1 个�
     if (!attributes) {
         NSLog(@"获取文件属性失败 %@: %@", path, attributesRetrievalError);
         return -1;
+    }else {
+        NSLog(@"获取文件成功");
     }
     NSTimeInterval seconds = -[[attributes fileModificationDate] timeIntervalSinceNow];
     return seconds;
@@ -290,11 +294,8 @@ static const NSInteger SYDefaultCacheMaxDeadline = 60 * 60 * 24 * 30; // 1 个�
     });
 }
 
-
 - (void)dealloc{
-    
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidReceiveMemoryWarningNotification object:nil];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidEnterBackgroundNotification object:nil];
 }
-
 @end
