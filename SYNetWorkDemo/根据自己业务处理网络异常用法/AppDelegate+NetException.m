@@ -14,7 +14,7 @@
 // 统一处理网络部分异常
 - (void)configHandleNetException{
     
-    [SYNetMananger sharedInstance].exceptionBlock = ^(NSError * _Nullable error, NSMutableDictionary* result) {
+    [SYNetMananger sharedInstance].exceptionBlock = ^(NSError * _Nullable error, NSString * _Nullable cacheKey, NSMutableDictionary* result) {
         
         if(![result isKindOfClass:[NSDictionary class]]){
             return ;

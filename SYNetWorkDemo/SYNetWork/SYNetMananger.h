@@ -11,6 +11,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+#define NetSuccess(result) ([[result objectForKey:@"code"] intValue] == 1)
+
 #define NetCacheDuration 60*5
 
 
@@ -21,6 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (nonnull instancetype)sharedInstance;
 
 
+// 请求参数条件 处理
+@property (nonatomic, copy)SYRequsetParamConditionBlock requestParamCondictionBlock;
 /**
  外部添加异常处理 （根据服务器返回的数据，统一处理，如处理登录实效），默认不做处理
  */
@@ -79,6 +83,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
+#pragma mark - Net 多任务
+
 /**
  保存网络请求信息 和 batchOfRequestOperations方法一起用
  */
@@ -91,6 +97,19 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
+- (SYNetRequestInfo*)syGetRequestNoCacheWithURL:(NSString *)URLString
+                                     parameters:(NSDictionary *)parameters
+                              completionHandler:(SYRequestCompletionHandler)completionHandler;
+
+- (SYNetRequestInfo*)syPostRequestNoCacheWithURL:(NSString *)URLString
+                                 parameters:(NSDictionary *)parameters
+                          completionHandler:(SYRequestCompletionHandler)completionHandler;
+
+
+// 开启任务 用SYNetRequestInfo
++ (void)syResumeTask:(SYNetRequestInfo*)requestInfo;
+
+
 /**
  执行多个网络请求
  
@@ -99,9 +118,24 @@ NS_ASSUME_NONNULL_BEGIN
  @param completionBlock tasks中所有网络任务结束
  */
 - (void)syBatchOfRequestOperations:(NSArray<SYNetRequestInfo *> *)tasks
-                   progressBlock:(void (^)(NSUInteger numberOfFinishedTasks, NSUInteger totalNumberOfTasks))progressBlock
+                   progressBlock:(nullable void (^)(NSUInteger numberOfFinishedTasks, NSUInteger totalNumberOfTasks))progressBlock
                  completionBlock:(netSuccessbatchBlock)completionBlock;
 
+/**
+ 执行多个网络请求，同上 没有进度progress参数
+ 
+ @param tasks 请求信息
+ @param completionBlock tasks中所有网络任务结束
+ */
+- (void)syBatchOfRequestOperations:(NSArray<SYNetRequestInfo *> *)tasks completionBlock:(netSuccessbatchBlock)completionBlock;
+
+/**
+ 执行多个网络请求，注意⚠️按照tasks里的顺序先后执行
+
+ @param tasks 请求信信
+ @param completionBlock tasks中所有网络任务结束
+ */
+- (void)syBatchOfRequestSynOperations:(NSArray<SYNetRequestInfo *> *)tasks completionBlock:(netSuccessbatchBlock)completionBlock;
 
 NS_ASSUME_NONNULL_END
 

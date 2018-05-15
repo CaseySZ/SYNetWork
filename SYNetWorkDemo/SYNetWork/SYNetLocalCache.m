@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 
 static NSString *  SYCacheFileProcessingQueue = @"com.eoc.SunyNetCache";
-static NSString *  SYCacheDocument = @"SYCache";
+static NSString *  SYCacheDocument = @"SYNetCache";
 static const NSInteger SYDefaultCacheMaxDeadline = 60 * 60 * 24 * 30; // 1 个月
 
 @interface SYNetLocalCache (){
@@ -112,6 +112,7 @@ static const NSInteger SYDefaultCacheMaxDeadline = 60 * 60 * 24 * 30; // 1 个�
 
 
 -(BOOL)checkIfShouldSkipCacheWithCacheDuration:(NSTimeInterval)cacheDuration cacheKey:(NSString*)urlkey{
+    
     if (cacheDuration == 0) {//如果不需要缓存
         return YES;
     }
@@ -162,9 +163,9 @@ static const NSInteger SYDefaultCacheMaxDeadline = 60 * 60 * 24 * 30; // 1 个�
         NSString *filePath = [_cachePath stringByAppendingPathComponent:key];
         BOOL written = [NSKeyedArchiver archiveRootObject:data toFile:filePath];
         if (!written) {
-            NSLog(@"写入缓存失败");
+            // NSLog(@"写入缓存失败");
         }else {
-            NSLog(@"写入缓存成功");
+           // NSLog(@"写入缓存成功");
             
         }
     });

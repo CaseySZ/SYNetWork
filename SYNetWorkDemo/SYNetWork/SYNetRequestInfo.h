@@ -10,6 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef void (^SYRequsetParamConditionBlock)(NSMutableDictionary *paramDict);
+
 typedef void (^SYRequestCompletionHandler)( NSError* _Nullable error,  BOOL isCache, NSDictionary* _Nullable result);
 typedef BOOL (^SYRequestCompletionAddCacheCondition)(NSDictionary *result);
 
@@ -26,7 +28,7 @@ typedef void (^netSuccessbatchBlock)(NSArray *operationAry);
 @property(nonatomic, copy)SYRequestCompletionHandler completionBlock;
 
 
-typedef void (^SYRequestCompletionAddExcepetionHanle)(NSError* _Nullable errror,  NSMutableDictionary* result);
+typedef void (^SYRequestCompletionAddExcepetionHanle)(NSError* _Nullable errror, NSString * _Nullable cacheKey, NSMutableDictionary* result);
 
 @end
 
