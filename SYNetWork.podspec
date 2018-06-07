@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "SYNetWork"
   s.summary      = "network frame base on AFNetwork"
-  s.version      = "1.0.0"
+  s.version      = "1.1.0"
   s.license      = "MIT"
   s.author       = { "sunyong445" => "512776506@qq.com" } # 作者信息
   

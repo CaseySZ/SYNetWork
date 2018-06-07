@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3D86D8B81F91AC5800D40DAA /* AppDelegate+NetCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D86D8B51F91AC5800D40DAA /* AppDelegate+NetCache.m */; };
 		3D86D8B91F91AC5800D40DAA /* AppDelegate+NetException.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D86D8B71F91AC5800D40DAA /* AppDelegate+NetException.m */; };
-		3DB4B4A21F78FB6B006EB81F /* SYNetWorkDemo.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 3DB4B4A11F78FB6B006EB81F /* SYNetWorkDemo.podspec */; };
 		3DC7C1111F78F48100E03E0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7C1101F78F48100E03E0A /* AppDelegate.m */; };
 		3DC7C1141F78F48100E03E0A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7C1131F78F48100E03E0A /* ViewController.m */; };
 		3DC7C1171F78F48100E03E0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC7C1151F78F48100E03E0A /* Main.storyboard */; };
@@ -30,7 +29,6 @@
 		3D86D8B51F91AC5800D40DAA /* AppDelegate+NetCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+NetCache.m"; sourceTree = "<group>"; };
 		3D86D8B61F91AC5800D40DAA /* AppDelegate+NetException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+NetException.h"; sourceTree = "<group>"; };
 		3D86D8B71F91AC5800D40DAA /* AppDelegate+NetException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+NetException.m"; sourceTree = "<group>"; };
-		3DB4B4A11F78FB6B006EB81F /* SYNetWorkDemo.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SYNetWorkDemo.podspec; sourceTree = SOURCE_ROOT; };
 		3DC7C10C1F78F48100E03E0A /* SYNetWorkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYNetWorkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC7C10F1F78F48100E03E0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3DC7C1101F78F48100E03E0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -127,7 +125,6 @@
 				3DC7C11D1F78F48100E03E0A /* Info.plist */,
 				3DC7C11E1F78F48100E03E0A /* main.m */,
 				3DC7C1321F78F64000E03E0A /* README.md */,
-				3DB4B4A11F78FB6B006EB81F /* SYNetWorkDemo.podspec */,
 			);
 			path = SYNetWorkDemo;
 			sourceTree = "<group>";
@@ -209,7 +206,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DC7C11C1F78F48100E03E0A /* LaunchScreen.storyboard in Resources */,
-				3DB4B4A21F78FB6B006EB81F /* SYNetWorkDemo.podspec in Resources */,
 				3DC7C1191F78F48100E03E0A /* Assets.xcassets in Resources */,
 				3DC7C1341F78F64000E03E0A /* README.md in Resources */,
 				3DC7C1171F78F48100E03E0A /* Main.storyboard in Resources */,
