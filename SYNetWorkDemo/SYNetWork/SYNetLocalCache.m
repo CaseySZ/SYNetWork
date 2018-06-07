@@ -163,9 +163,9 @@ static const NSInteger SYDefaultCacheMaxDeadline = 60 * 60 * 24 * 30; // 1 个�
         NSString *filePath = [_cachePath stringByAppendingPathComponent:key];
         BOOL written = [NSKeyedArchiver archiveRootObject:data toFile:filePath];
         if (!written) {
-            // NSLog(@"写入缓存失败");
+           
         }else {
-           // NSLog(@"写入缓存成功");
+           
             
         }
     });
@@ -204,10 +204,10 @@ static const NSInteger SYDefaultCacheMaxDeadline = 60 * 60 * 24 * 30; // 1 个�
     NSDictionary *attributes = [_fileManager attributesOfItemAtPath:path
                                                               error:&attributesRetrievalError];
     if (!attributes) {
-        NSLog(@"获取文件属性失败 %@: %@", path, attributesRetrievalError);
+        
         return -1;
     }else {
-        NSLog(@"获取文件成功");
+       
     }
     NSTimeInterval seconds = -[[attributes fileModificationDate] timeIntervalSinceNow];
     return seconds;

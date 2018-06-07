@@ -208,7 +208,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (AFHTTPSessionManager*)afHttpManager{
     
     AFHTTPSessionManager *afManager = [[AFHTTPSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration ephemeralSessionConfiguration]];
-    afManager.requestSerializer.cachePolicy = NSURLRequestReloadIgnoringLocalAndRemoteCacheData;
+    afManager.requestSerializer.cachePolicy = NSURLRequestReloadIgnoringCacheData;
     return afManager;
 }
 
