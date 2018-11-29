@@ -7,8 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "AppDelegate+NetCache.h"
-#import "AppDelegate+NetException.h"
+#import "AppDelegate+NetConfig.h"
 
 @interface AppDelegate ()
 
@@ -20,8 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [self configNetCacheCondition];
-    [self configHandleNetException];
+    [self configNetCondition];
     return YES;
 }
 

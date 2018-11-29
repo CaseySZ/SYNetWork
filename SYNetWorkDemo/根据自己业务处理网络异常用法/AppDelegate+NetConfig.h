@@ -1,5 +1,5 @@
 //
-//  AppDelegate+NetException.h
+//  AppDelegate+NetCache.h
 //  ExamProject
 //
 //  Created by ksw on 2017/10/13.
@@ -8,8 +8,8 @@
 
 #import "AppDelegate.h"
 
-@interface AppDelegate (NetException)
+@interface AppDelegate (NetCache)
 
-- (void)configHandleNetException;
+- (void)configNetCondition;
 
 @end

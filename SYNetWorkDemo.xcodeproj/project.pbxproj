@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D86D8B81F91AC5800D40DAA /* AppDelegate+NetCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D86D8B51F91AC5800D40DAA /* AppDelegate+NetCache.m */; };
-		3D86D8B91F91AC5800D40DAA /* AppDelegate+NetException.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D86D8B71F91AC5800D40DAA /* AppDelegate+NetException.m */; };
+		3D86D8B81F91AC5800D40DAA /* AppDelegate+NetConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D86D8B51F91AC5800D40DAA /* AppDelegate+NetConfig.m */; };
 		3DB4B4A21F78FB6B006EB81F /* SYNetWorkDemo.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 3DB4B4A11F78FB6B006EB81F /* SYNetWorkDemo.podspec */; };
 		3DC7C1111F78F48100E03E0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7C1101F78F48100E03E0A /* AppDelegate.m */; };
 		3DC7C1141F78F48100E03E0A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7C1131F78F48100E03E0A /* ViewController.m */; };
@@ -16,20 +15,20 @@
 		3DC7C1191F78F48100E03E0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC7C1181F78F48100E03E0A /* Assets.xcassets */; };
 		3DC7C11C1F78F48100E03E0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC7C11A1F78F48100E03E0A /* LaunchScreen.storyboard */; };
 		3DC7C11F1F78F48100E03E0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7C11E1F78F48100E03E0A /* main.m */; };
-		3DC7C12E1F78F51800E03E0A /* SYMD5DataConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7C1271F78F51800E03E0A /* SYMD5DataConvert.m */; };
-		3DC7C12F1F78F51800E03E0A /* SYNetLocalCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7C1291F78F51800E03E0A /* SYNetLocalCache.m */; };
-		3DC7C1301F78F51800E03E0A /* SYNetMananger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7C12B1F78F51800E03E0A /* SYNetMananger.m */; };
-		3DC7C1311F78F51800E03E0A /* SYNetRequestInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7C12D1F78F51800E03E0A /* SYNetRequestInfo.m */; };
 		3DC7C1341F78F64000E03E0A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3DC7C1321F78F64000E03E0A /* README.md */; };
 		A717E6926C37648C456C55B2 /* libPods-SYNetWorkDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BACEE2017E58E1881074E319 /* libPods-SYNetWorkDemo.a */; };
+		C970DDB521AFEA10002117F6 /* MD5DataConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = C970DDA521AFEA10002117F6 /* MD5DataConvert.m */; };
+		C970DDB621AFEA10002117F6 /* NetLocalCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C970DDA721AFEA10002117F6 /* NetLocalCache.m */; };
+		C970DDB721AFEA10002117F6 /* NSDictionary+ConvertObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C970DDAB21AFEA10002117F6 /* NSDictionary+ConvertObject.m */; };
+		C970DDB821AFEA10002117F6 /* NetMananger+MultipleTask.m in Sources */ = {isa = PBXBuildFile; fileRef = C970DDAF21AFEA10002117F6 /* NetMananger+MultipleTask.m */; };
+		C970DDB921AFEA10002117F6 /* NetRequestInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C970DDB121AFEA10002117F6 /* NetRequestInfo.m */; };
+		C970DDBA21AFEA10002117F6 /* NetMananger.m in Sources */ = {isa = PBXBuildFile; fileRef = C970DDB321AFEA10002117F6 /* NetMananger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3D02B783032826DAD9ACD639 /* Pods-SYNetWorkDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYNetWorkDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SYNetWorkDemo/Pods-SYNetWorkDemo.release.xcconfig"; sourceTree = "<group>"; };
-		3D86D8B41F91AC5800D40DAA /* AppDelegate+NetCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+NetCache.h"; sourceTree = "<group>"; };
-		3D86D8B51F91AC5800D40DAA /* AppDelegate+NetCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+NetCache.m"; sourceTree = "<group>"; };
-		3D86D8B61F91AC5800D40DAA /* AppDelegate+NetException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+NetException.h"; sourceTree = "<group>"; };
-		3D86D8B71F91AC5800D40DAA /* AppDelegate+NetException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+NetException.m"; sourceTree = "<group>"; };
+		3D86D8B41F91AC5800D40DAA /* AppDelegate+NetConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+NetConfig.h"; sourceTree = "<group>"; };
+		3D86D8B51F91AC5800D40DAA /* AppDelegate+NetConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+NetConfig.m"; sourceTree = "<group>"; };
 		3DB4B4A11F78FB6B006EB81F /* SYNetWorkDemo.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SYNetWorkDemo.podspec; sourceTree = SOURCE_ROOT; };
 		3DC7C10C1F78F48100E03E0A /* SYNetWorkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYNetWorkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC7C10F1F78F48100E03E0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -41,16 +40,21 @@
 		3DC7C11B1F78F48100E03E0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DC7C11D1F78F48100E03E0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DC7C11E1F78F48100E03E0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3DC7C1261F78F51800E03E0A /* SYMD5DataConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYMD5DataConvert.h; sourceTree = "<group>"; };
-		3DC7C1271F78F51800E03E0A /* SYMD5DataConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYMD5DataConvert.m; sourceTree = "<group>"; };
-		3DC7C1281F78F51800E03E0A /* SYNetLocalCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYNetLocalCache.h; sourceTree = "<group>"; };
-		3DC7C1291F78F51800E03E0A /* SYNetLocalCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYNetLocalCache.m; sourceTree = "<group>"; };
-		3DC7C12A1F78F51800E03E0A /* SYNetMananger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYNetMananger.h; sourceTree = "<group>"; };
-		3DC7C12B1F78F51800E03E0A /* SYNetMananger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYNetMananger.m; sourceTree = "<group>"; };
-		3DC7C12C1F78F51800E03E0A /* SYNetRequestInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYNetRequestInfo.h; sourceTree = "<group>"; };
-		3DC7C12D1F78F51800E03E0A /* SYNetRequestInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYNetRequestInfo.m; sourceTree = "<group>"; };
 		3DC7C1321F78F64000E03E0A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		BACEE2017E58E1881074E319 /* libPods-SYNetWorkDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SYNetWorkDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C970DDA421AFEA10002117F6 /* MD5DataConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5DataConvert.h; sourceTree = "<group>"; };
+		C970DDA521AFEA10002117F6 /* MD5DataConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MD5DataConvert.m; sourceTree = "<group>"; };
+		C970DDA621AFEA10002117F6 /* NetLocalCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetLocalCache.h; sourceTree = "<group>"; };
+		C970DDA721AFEA10002117F6 /* NetLocalCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetLocalCache.m; sourceTree = "<group>"; };
+		C970DDA821AFEA10002117F6 /* CaseyNetWorking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaseyNetWorking.h; sourceTree = "<group>"; };
+		C970DDAA21AFEA10002117F6 /* NSDictionary+ConvertObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ConvertObject.h"; sourceTree = "<group>"; };
+		C970DDAB21AFEA10002117F6 /* NSDictionary+ConvertObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ConvertObject.m"; sourceTree = "<group>"; };
+		C970DDAE21AFEA10002117F6 /* NetMananger+MultipleTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NetMananger+MultipleTask.h"; sourceTree = "<group>"; };
+		C970DDAF21AFEA10002117F6 /* NetMananger+MultipleTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NetMananger+MultipleTask.m"; sourceTree = "<group>"; };
+		C970DDB021AFEA10002117F6 /* NetRequestInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetRequestInfo.h; sourceTree = "<group>"; };
+		C970DDB121AFEA10002117F6 /* NetRequestInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetRequestInfo.m; sourceTree = "<group>"; };
+		C970DDB221AFEA10002117F6 /* NetMananger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetMananger.h; sourceTree = "<group>"; };
+		C970DDB321AFEA10002117F6 /* NetMananger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetMananger.m; sourceTree = "<group>"; };
 		E2EDCB0488C152B05F4387A4 /* Pods-SYNetWorkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYNetWorkDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SYNetWorkDemo/Pods-SYNetWorkDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,10 +90,8 @@
 		3D86D8B31F91AC5800D40DAA /* 根据自己业务处理网络异常用法 */ = {
 			isa = PBXGroup;
 			children = (
-				3D86D8B41F91AC5800D40DAA /* AppDelegate+NetCache.h */,
-				3D86D8B51F91AC5800D40DAA /* AppDelegate+NetCache.m */,
-				3D86D8B61F91AC5800D40DAA /* AppDelegate+NetException.h */,
-				3D86D8B71F91AC5800D40DAA /* AppDelegate+NetException.m */,
+				3D86D8B41F91AC5800D40DAA /* AppDelegate+NetConfig.h */,
+				3D86D8B51F91AC5800D40DAA /* AppDelegate+NetConfig.m */,
 			);
 			path = "根据自己业务处理网络异常用法";
 			sourceTree = "<group>";
@@ -115,8 +117,8 @@
 		3DC7C10E1F78F48100E03E0A /* SYNetWorkDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C970DDA221AFEA10002117F6 /* Network */,
 				3D86D8B31F91AC5800D40DAA /* 根据自己业务处理网络异常用法 */,
-				3DC7C1251F78F51800E03E0A /* SYNetWork */,
 				3DC7C10F1F78F48100E03E0A /* AppDelegate.h */,
 				3DC7C1101F78F48100E03E0A /* AppDelegate.m */,
 				3DC7C1121F78F48100E03E0A /* ViewController.h */,
@@ -132,19 +134,64 @@
 			path = SYNetWorkDemo;
 			sourceTree = "<group>";
 		};
-		3DC7C1251F78F51800E03E0A /* SYNetWork */ = {
+		C970DDA221AFEA10002117F6 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				3DC7C12A1F78F51800E03E0A /* SYNetMananger.h */,
-				3DC7C12B1F78F51800E03E0A /* SYNetMananger.m */,
-				3DC7C1261F78F51800E03E0A /* SYMD5DataConvert.h */,
-				3DC7C1271F78F51800E03E0A /* SYMD5DataConvert.m */,
-				3DC7C1281F78F51800E03E0A /* SYNetLocalCache.h */,
-				3DC7C1291F78F51800E03E0A /* SYNetLocalCache.m */,
-				3DC7C12C1F78F51800E03E0A /* SYNetRequestInfo.h */,
-				3DC7C12D1F78F51800E03E0A /* SYNetRequestInfo.m */,
+				C970DDA821AFEA10002117F6 /* CaseyNetWorking.h */,
+				C970DDA321AFEA10002117F6 /* Cache */,
+				C970DDA921AFEA10002117F6 /* ConvertObject */,
+				C970DDAC21AFEA10002117F6 /* DownFile */,
+				C970DDAD21AFEA10002117F6 /* Multiple Task */,
+				C970DDB221AFEA10002117F6 /* NetMananger.h */,
+				C970DDB321AFEA10002117F6 /* NetMananger.m */,
+				C970DDB421AFEA10002117F6 /* Update */,
 			);
-			path = SYNetWork;
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C970DDA321AFEA10002117F6 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				C970DDA421AFEA10002117F6 /* MD5DataConvert.h */,
+				C970DDA521AFEA10002117F6 /* MD5DataConvert.m */,
+				C970DDA621AFEA10002117F6 /* NetLocalCache.h */,
+				C970DDA721AFEA10002117F6 /* NetLocalCache.m */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		C970DDA921AFEA10002117F6 /* ConvertObject */ = {
+			isa = PBXGroup;
+			children = (
+				C970DDAA21AFEA10002117F6 /* NSDictionary+ConvertObject.h */,
+				C970DDAB21AFEA10002117F6 /* NSDictionary+ConvertObject.m */,
+			);
+			path = ConvertObject;
+			sourceTree = "<group>";
+		};
+		C970DDAC21AFEA10002117F6 /* DownFile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DownFile;
+			sourceTree = "<group>";
+		};
+		C970DDAD21AFEA10002117F6 /* Multiple Task */ = {
+			isa = PBXGroup;
+			children = (
+				C970DDAE21AFEA10002117F6 /* NetMananger+MultipleTask.h */,
+				C970DDAF21AFEA10002117F6 /* NetMananger+MultipleTask.m */,
+				C970DDB021AFEA10002117F6 /* NetRequestInfo.h */,
+				C970DDB121AFEA10002117F6 /* NetRequestInfo.m */,
+			);
+			path = "Multiple Task";
+			sourceTree = "<group>";
+		};
+		C970DDB421AFEA10002117F6 /* Update */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Update;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,15 +321,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C970DDB521AFEA10002117F6 /* MD5DataConvert.m in Sources */,
+				C970DDB721AFEA10002117F6 /* NSDictionary+ConvertObject.m in Sources */,
 				3DC7C1141F78F48100E03E0A /* ViewController.m in Sources */,
-				3DC7C12F1F78F51800E03E0A /* SYNetLocalCache.m in Sources */,
-				3DC7C1301F78F51800E03E0A /* SYNetMananger.m in Sources */,
-				3D86D8B81F91AC5800D40DAA /* AppDelegate+NetCache.m in Sources */,
-				3D86D8B91F91AC5800D40DAA /* AppDelegate+NetException.m in Sources */,
-				3DC7C1311F78F51800E03E0A /* SYNetRequestInfo.m in Sources */,
+				C970DDBA21AFEA10002117F6 /* NetMananger.m in Sources */,
+				C970DDB621AFEA10002117F6 /* NetLocalCache.m in Sources */,
+				3D86D8B81F91AC5800D40DAA /* AppDelegate+NetConfig.m in Sources */,
 				3DC7C11F1F78F48100E03E0A /* main.m in Sources */,
-				3DC7C12E1F78F51800E03E0A /* SYMD5DataConvert.m in Sources */,
+				C970DDB921AFEA10002117F6 /* NetRequestInfo.m in Sources */,
 				3DC7C1111F78F48100E03E0A /* AppDelegate.m in Sources */,
+				C970DDB821AFEA10002117F6 /* NetMananger+MultipleTask.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
