@@ -262,12 +262,12 @@ NS_ASSUME_NONNULL_BEGIN
                       cacheDuration:(NSTimeInterval)cacheDuration
                   completionHandler:(RequestCompletionHandler)completionHandler{
 
-    if (self.requestParamCondictionBlock) {
-        parameters = self.requestParamCondictionBlock(parameters);
+    if (self.requestBodyCommonParamBlock) {
+        parameters = self.requestBodyCommonParamBlock(parameters);
     }
     
-    if (self.requestHeaderParamCondictionBlock){
-        headerParam = self.requestHeaderParamCondictionBlock(headerParam);
+    if (self.requestHeaderCommonParamBlock){
+        headerParam = self.requestHeaderCommonParamBlock(headerParam);
     }
     
     NSString *fileKeyFromUrl = ConvertMD5FromParametern(urlStr, method, parameters);
@@ -354,6 +354,7 @@ NS_ASSUME_NONNULL_BEGIN
        
     }else{
         
+        AFHTTPSessionManager *manager = self.afHttpManager;
         task = [manager POST:urlStr parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             
             newCompletionBlock(nil,NO, responseObject);
@@ -373,6 +374,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (AFHTTPSessionManager*)afHttpManager{
     
     AFHTTPSessionManager *afManager = [[AFHTTPSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration ephemeralSessionConfiguration]];
+    
+    NSSet *acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/plain", @"text/javascript", @"text/json",@"text/html",@"text/css", nil];
+    afManager.responseSerializer.acceptableContentTypes = acceptableContentTypes;
+
     return afManager;
 }
 

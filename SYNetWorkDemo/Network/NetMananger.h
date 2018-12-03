@@ -37,14 +37,14 @@ NS_ASSUME_NONNULL_BEGIN
  
 */
 
-@property (nonatomic, copy)RequsetAddBodyParamBlock requestParamCondictionBlock;
+@property (nonatomic, copy)RequsetAddCommonBodyParamBlock requestBodyCommonParamBlock;
 
 
 /*
     请求头参数 处理
  
 */
-@property (nonatomic, copy)RequsetAddBodyParamBlock requestHeaderParamCondictionBlock;
+@property (nonatomic, copy)RequsetAddCommonBodyParamBlock requestHeaderCommonParamBlock;
 
 
 

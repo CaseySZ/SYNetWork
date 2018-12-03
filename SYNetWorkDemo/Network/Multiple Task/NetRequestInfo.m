@@ -148,8 +148,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 + (NetRequestInfo*)postURLEncodeCacheWithURL:(NSString *)URLString
-                                    parameters:(NSDictionary* )parameters
-                                   headerParam:(NSDictionary* )headerParam
+                                    parameters:(NSDictionary *)parameters
+                                   headerParam:(NSDictionary*)headerParam
                              completionHandler:(RequestCompletionHandler)completionHandler{
     
     NetRequestInfo *requestInfo =  [NetRequestInfo new];

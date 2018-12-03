@@ -11,13 +11,17 @@
 @class NetMananger;
 
 
+// 请求公用参数
+typedef NSDictionary* (^RequsetAddCommonBodyParamBlock)(NSDictionary *paramDict);
 
-typedef NSDictionary* (^RequsetAddBodyParamBlock)(NSDictionary *paramDict);
-typedef NSDictionary* (^RequestCompletionAddExcepetionHanle)(NSError* _Nullable error, NSString * _Nullable cacheKey, NSDictionary* result);
+// 请求体公用参数
+typedef NSDictionary* (^RequestCompletionAddExcepetionHanle)(NSError* _Nullable errror, NSString * _Nullable cacheKey, NSDictionary* result);
 typedef BOOL (^RequestAddCacheCondition)(NSDictionary *result);
 
 typedef void (^RequestCompletionHandler)( NSError* _Nullable error,  BOOL isCache, NSDictionary* _Nullable result);
 typedef void (^netSuccessbatchBlock)(NSArray *operationAry);
+
+
 
 
 typedef enum : NSUInteger {

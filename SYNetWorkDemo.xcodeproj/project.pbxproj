@@ -17,12 +17,14 @@
 		3DC7C11F1F78F48100E03E0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7C11E1F78F48100E03E0A /* main.m */; };
 		3DC7C1341F78F64000E03E0A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3DC7C1321F78F64000E03E0A /* README.md */; };
 		A717E6926C37648C456C55B2 /* libPods-SYNetWorkDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BACEE2017E58E1881074E319 /* libPods-SYNetWorkDemo.a */; };
-		C970DDB521AFEA10002117F6 /* MD5DataConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = C970DDA521AFEA10002117F6 /* MD5DataConvert.m */; };
-		C970DDB621AFEA10002117F6 /* NetLocalCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C970DDA721AFEA10002117F6 /* NetLocalCache.m */; };
-		C970DDB721AFEA10002117F6 /* NSDictionary+ConvertObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C970DDAB21AFEA10002117F6 /* NSDictionary+ConvertObject.m */; };
-		C970DDB821AFEA10002117F6 /* NetMananger+MultipleTask.m in Sources */ = {isa = PBXBuildFile; fileRef = C970DDAF21AFEA10002117F6 /* NetMananger+MultipleTask.m */; };
-		C970DDB921AFEA10002117F6 /* NetRequestInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C970DDB121AFEA10002117F6 /* NetRequestInfo.m */; };
-		C970DDBA21AFEA10002117F6 /* NetMananger.m in Sources */ = {isa = PBXBuildFile; fileRef = C970DDB321AFEA10002117F6 /* NetMananger.m */; };
+		C9E63A2621B5162C0098628E /* MD5DataConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E63A1421B5162C0098628E /* MD5DataConvert.m */; };
+		C9E63A2721B5162C0098628E /* NetLocalCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E63A1621B5162C0098628E /* NetLocalCache.m */; };
+		C9E63A2821B5162C0098628E /* NSDictionary+ConvertObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E63A1A21B5162C0098628E /* NSDictionary+ConvertObject.m */; };
+		C9E63A2921B5162C0098628E /* NetMananger+DownFile.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E63A1D21B5162C0098628E /* NetMananger+DownFile.m */; };
+		C9E63A2A21B5162C0098628E /* NetMananger+MultipleTask.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E63A2021B5162C0098628E /* NetMananger+MultipleTask.m */; };
+		C9E63A2B21B5162C0098628E /* NetRequestInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E63A2221B5162C0098628E /* NetRequestInfo.m */; };
+		C9E63A2C21B5162C0098628E /* NetMananger.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E63A2421B5162C0098628E /* NetMananger.m */; };
+		C9E63A2F21B51A130098628E /* DownLoadFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E63A2E21B51A130098628E /* DownLoadFileModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,19 +44,23 @@
 		3DC7C11E1F78F48100E03E0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3DC7C1321F78F64000E03E0A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		BACEE2017E58E1881074E319 /* libPods-SYNetWorkDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SYNetWorkDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C970DDA421AFEA10002117F6 /* MD5DataConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5DataConvert.h; sourceTree = "<group>"; };
-		C970DDA521AFEA10002117F6 /* MD5DataConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MD5DataConvert.m; sourceTree = "<group>"; };
-		C970DDA621AFEA10002117F6 /* NetLocalCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetLocalCache.h; sourceTree = "<group>"; };
-		C970DDA721AFEA10002117F6 /* NetLocalCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetLocalCache.m; sourceTree = "<group>"; };
-		C970DDA821AFEA10002117F6 /* CaseyNetWorking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaseyNetWorking.h; sourceTree = "<group>"; };
-		C970DDAA21AFEA10002117F6 /* NSDictionary+ConvertObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ConvertObject.h"; sourceTree = "<group>"; };
-		C970DDAB21AFEA10002117F6 /* NSDictionary+ConvertObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ConvertObject.m"; sourceTree = "<group>"; };
-		C970DDAE21AFEA10002117F6 /* NetMananger+MultipleTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NetMananger+MultipleTask.h"; sourceTree = "<group>"; };
-		C970DDAF21AFEA10002117F6 /* NetMananger+MultipleTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NetMananger+MultipleTask.m"; sourceTree = "<group>"; };
-		C970DDB021AFEA10002117F6 /* NetRequestInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetRequestInfo.h; sourceTree = "<group>"; };
-		C970DDB121AFEA10002117F6 /* NetRequestInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetRequestInfo.m; sourceTree = "<group>"; };
-		C970DDB221AFEA10002117F6 /* NetMananger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetMananger.h; sourceTree = "<group>"; };
-		C970DDB321AFEA10002117F6 /* NetMananger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetMananger.m; sourceTree = "<group>"; };
+		C9E63A1321B5162C0098628E /* MD5DataConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5DataConvert.h; sourceTree = "<group>"; };
+		C9E63A1421B5162C0098628E /* MD5DataConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MD5DataConvert.m; sourceTree = "<group>"; };
+		C9E63A1521B5162C0098628E /* NetLocalCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetLocalCache.h; sourceTree = "<group>"; };
+		C9E63A1621B5162C0098628E /* NetLocalCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetLocalCache.m; sourceTree = "<group>"; };
+		C9E63A1721B5162C0098628E /* CaseyNetWorking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaseyNetWorking.h; sourceTree = "<group>"; };
+		C9E63A1921B5162C0098628E /* NSDictionary+ConvertObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ConvertObject.h"; sourceTree = "<group>"; };
+		C9E63A1A21B5162C0098628E /* NSDictionary+ConvertObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ConvertObject.m"; sourceTree = "<group>"; };
+		C9E63A1C21B5162C0098628E /* NetMananger+DownFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NetMananger+DownFile.h"; sourceTree = "<group>"; };
+		C9E63A1D21B5162C0098628E /* NetMananger+DownFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NetMananger+DownFile.m"; sourceTree = "<group>"; };
+		C9E63A1F21B5162C0098628E /* NetMananger+MultipleTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NetMananger+MultipleTask.h"; sourceTree = "<group>"; };
+		C9E63A2021B5162C0098628E /* NetMananger+MultipleTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NetMananger+MultipleTask.m"; sourceTree = "<group>"; };
+		C9E63A2121B5162C0098628E /* NetRequestInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetRequestInfo.h; sourceTree = "<group>"; };
+		C9E63A2221B5162C0098628E /* NetRequestInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetRequestInfo.m; sourceTree = "<group>"; };
+		C9E63A2321B5162C0098628E /* NetMananger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetMananger.h; sourceTree = "<group>"; };
+		C9E63A2421B5162C0098628E /* NetMananger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetMananger.m; sourceTree = "<group>"; };
+		C9E63A2D21B51A130098628E /* DownLoadFileModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownLoadFileModel.h; sourceTree = "<group>"; };
+		C9E63A2E21B51A130098628E /* DownLoadFileModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownLoadFileModel.m; sourceTree = "<group>"; };
 		E2EDCB0488C152B05F4387A4 /* Pods-SYNetWorkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYNetWorkDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SYNetWorkDemo/Pods-SYNetWorkDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,7 +123,7 @@
 		3DC7C10E1F78F48100E03E0A /* SYNetWorkDemo */ = {
 			isa = PBXGroup;
 			children = (
-				C970DDA221AFEA10002117F6 /* Network */,
+				C9E63A1121B5162C0098628E /* Network */,
 				3D86D8B31F91AC5800D40DAA /* 根据自己业务处理网络异常用法 */,
 				3DC7C10F1F78F48100E03E0A /* AppDelegate.h */,
 				3DC7C1101F78F48100E03E0A /* AppDelegate.m */,
@@ -134,60 +140,64 @@
 			path = SYNetWorkDemo;
 			sourceTree = "<group>";
 		};
-		C970DDA221AFEA10002117F6 /* Network */ = {
+		C9E63A1121B5162C0098628E /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				C970DDA821AFEA10002117F6 /* CaseyNetWorking.h */,
-				C970DDA321AFEA10002117F6 /* Cache */,
-				C970DDA921AFEA10002117F6 /* ConvertObject */,
-				C970DDAC21AFEA10002117F6 /* DownFile */,
-				C970DDAD21AFEA10002117F6 /* Multiple Task */,
-				C970DDB221AFEA10002117F6 /* NetMananger.h */,
-				C970DDB321AFEA10002117F6 /* NetMananger.m */,
-				C970DDB421AFEA10002117F6 /* Update */,
+				C9E63A1721B5162C0098628E /* CaseyNetWorking.h */,
+				C9E63A2321B5162C0098628E /* NetMananger.h */,
+				C9E63A2421B5162C0098628E /* NetMananger.m */,
+				C9E63A1221B5162C0098628E /* Cache */,
+				C9E63A1821B5162C0098628E /* ConvertObject */,
+				C9E63A1B21B5162C0098628E /* DownFile */,
+				C9E63A1E21B5162C0098628E /* Multiple Task */,
+				C9E63A2521B5162C0098628E /* Update */,
 			);
 			path = Network;
 			sourceTree = "<group>";
 		};
-		C970DDA321AFEA10002117F6 /* Cache */ = {
+		C9E63A1221B5162C0098628E /* Cache */ = {
 			isa = PBXGroup;
 			children = (
-				C970DDA421AFEA10002117F6 /* MD5DataConvert.h */,
-				C970DDA521AFEA10002117F6 /* MD5DataConvert.m */,
-				C970DDA621AFEA10002117F6 /* NetLocalCache.h */,
-				C970DDA721AFEA10002117F6 /* NetLocalCache.m */,
+				C9E63A1321B5162C0098628E /* MD5DataConvert.h */,
+				C9E63A1421B5162C0098628E /* MD5DataConvert.m */,
+				C9E63A1521B5162C0098628E /* NetLocalCache.h */,
+				C9E63A1621B5162C0098628E /* NetLocalCache.m */,
 			);
 			path = Cache;
 			sourceTree = "<group>";
 		};
-		C970DDA921AFEA10002117F6 /* ConvertObject */ = {
+		C9E63A1821B5162C0098628E /* ConvertObject */ = {
 			isa = PBXGroup;
 			children = (
-				C970DDAA21AFEA10002117F6 /* NSDictionary+ConvertObject.h */,
-				C970DDAB21AFEA10002117F6 /* NSDictionary+ConvertObject.m */,
+				C9E63A1921B5162C0098628E /* NSDictionary+ConvertObject.h */,
+				C9E63A1A21B5162C0098628E /* NSDictionary+ConvertObject.m */,
 			);
 			path = ConvertObject;
 			sourceTree = "<group>";
 		};
-		C970DDAC21AFEA10002117F6 /* DownFile */ = {
+		C9E63A1B21B5162C0098628E /* DownFile */ = {
 			isa = PBXGroup;
 			children = (
+				C9E63A1C21B5162C0098628E /* NetMananger+DownFile.h */,
+				C9E63A1D21B5162C0098628E /* NetMananger+DownFile.m */,
+				C9E63A2D21B51A130098628E /* DownLoadFileModel.h */,
+				C9E63A2E21B51A130098628E /* DownLoadFileModel.m */,
 			);
 			path = DownFile;
 			sourceTree = "<group>";
 		};
-		C970DDAD21AFEA10002117F6 /* Multiple Task */ = {
+		C9E63A1E21B5162C0098628E /* Multiple Task */ = {
 			isa = PBXGroup;
 			children = (
-				C970DDAE21AFEA10002117F6 /* NetMananger+MultipleTask.h */,
-				C970DDAF21AFEA10002117F6 /* NetMananger+MultipleTask.m */,
-				C970DDB021AFEA10002117F6 /* NetRequestInfo.h */,
-				C970DDB121AFEA10002117F6 /* NetRequestInfo.m */,
+				C9E63A1F21B5162C0098628E /* NetMananger+MultipleTask.h */,
+				C9E63A2021B5162C0098628E /* NetMananger+MultipleTask.m */,
+				C9E63A2121B5162C0098628E /* NetRequestInfo.h */,
+				C9E63A2221B5162C0098628E /* NetRequestInfo.m */,
 			);
 			path = "Multiple Task";
 			sourceTree = "<group>";
 		};
-		C970DDB421AFEA10002117F6 /* Update */ = {
+		C9E63A2521B5162C0098628E /* Update */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -321,16 +331,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C970DDB521AFEA10002117F6 /* MD5DataConvert.m in Sources */,
-				C970DDB721AFEA10002117F6 /* NSDictionary+ConvertObject.m in Sources */,
+				C9E63A2F21B51A130098628E /* DownLoadFileModel.m in Sources */,
+				C9E63A2721B5162C0098628E /* NetLocalCache.m in Sources */,
 				3DC7C1141F78F48100E03E0A /* ViewController.m in Sources */,
-				C970DDBA21AFEA10002117F6 /* NetMananger.m in Sources */,
-				C970DDB621AFEA10002117F6 /* NetLocalCache.m in Sources */,
 				3D86D8B81F91AC5800D40DAA /* AppDelegate+NetConfig.m in Sources */,
+				C9E63A2C21B5162C0098628E /* NetMananger.m in Sources */,
 				3DC7C11F1F78F48100E03E0A /* main.m in Sources */,
-				C970DDB921AFEA10002117F6 /* NetRequestInfo.m in Sources */,
+				C9E63A2921B5162C0098628E /* NetMananger+DownFile.m in Sources */,
 				3DC7C1111F78F48100E03E0A /* AppDelegate.m in Sources */,
-				C970DDB821AFEA10002117F6 /* NetMananger+MultipleTask.m in Sources */,
+				C9E63A2821B5162C0098628E /* NSDictionary+ConvertObject.m in Sources */,
+				C9E63A2B21B5162C0098628E /* NetRequestInfo.m in Sources */,
+				C9E63A2621B5162C0098628E /* MD5DataConvert.m in Sources */,
+				C9E63A2A21B5162C0098628E /* NetMananger+MultipleTask.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

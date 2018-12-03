@@ -9,10 +9,15 @@
 #ifndef CaseyNetWorking_h
 #define CaseyNetWorking_h
 
-#import "NetMananger+MultipleTask.h"
-#import "NetRequestInfo.h"
-#import "NSDictionary+ConvertObject.h"
 
+#import "NetRequestInfo.h"
+#import "NetMananger+MultipleTask.h"
+#import "NetMananger.h"
+#import "NSDictionary+ConvertObject.h"
+#import "NetMananger+DownFile.h"
+
+
+typedef void (^NetFinishBlock)(NSError* _Nullable errror, NSDictionary* result);
 
 
 

@@ -31,7 +31,7 @@
     };
     
     // 统一处理请求体参数
-    [NetMananger sharedInstance].requestParamCondictionBlock = ^NSDictionary *(NSDictionary *paramDict) {
+    [NetMananger sharedInstance].requestBodyCommonParamBlock = ^NSDictionary *(NSDictionary *paramDict) {
         
         
         NSMutableDictionary *newParam = paramDict.mutableCopy;
@@ -43,7 +43,7 @@
     };
     
     // 统一处理请求头
-    [NetMananger sharedInstance].requestHeaderParamCondictionBlock = ^NSDictionary *(NSDictionary *paramDict) {
+    [NetMananger sharedInstance].requestHeaderCommonParamBlock = ^NSDictionary *(NSDictionary *paramDict) {
        
         
         NSLog(@"requestHeaderParamCondictionBlock");
