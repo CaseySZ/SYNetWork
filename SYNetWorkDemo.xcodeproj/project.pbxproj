@@ -25,6 +25,7 @@
 		C9E63A2B21B5162C0098628E /* NetRequestInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E63A2221B5162C0098628E /* NetRequestInfo.m */; };
 		C9E63A2C21B5162C0098628E /* NetMananger.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E63A2421B5162C0098628E /* NetMananger.m */; };
 		C9E63A2F21B51A130098628E /* DownLoadFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E63A2E21B51A130098628E /* DownLoadFileModel.m */; };
+		C9E63A4A21B53F290098628E /* NetMananger+UpdateFile.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E63A4821B53F290098628E /* NetMananger+UpdateFile.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,8 @@
 		C9E63A2421B5162C0098628E /* NetMananger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetMananger.m; sourceTree = "<group>"; };
 		C9E63A2D21B51A130098628E /* DownLoadFileModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownLoadFileModel.h; sourceTree = "<group>"; };
 		C9E63A2E21B51A130098628E /* DownLoadFileModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownLoadFileModel.m; sourceTree = "<group>"; };
+		C9E63A4821B53F290098628E /* NetMananger+UpdateFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NetMananger+UpdateFile.m"; sourceTree = "<group>"; };
+		C9E63A4921B53F290098628E /* NetMananger+UpdateFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NetMananger+UpdateFile.h"; sourceTree = "<group>"; };
 		E2EDCB0488C152B05F4387A4 /* Pods-SYNetWorkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYNetWorkDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SYNetWorkDemo/Pods-SYNetWorkDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -200,6 +203,8 @@
 		C9E63A2521B5162C0098628E /* Update */ = {
 			isa = PBXGroup;
 			children = (
+				C9E63A4921B53F290098628E /* NetMananger+UpdateFile.h */,
+				C9E63A4821B53F290098628E /* NetMananger+UpdateFile.m */,
 			);
 			path = Update;
 			sourceTree = "<group>";
@@ -340,6 +345,7 @@
 				C9E63A2921B5162C0098628E /* NetMananger+DownFile.m in Sources */,
 				3DC7C1111F78F48100E03E0A /* AppDelegate.m in Sources */,
 				C9E63A2821B5162C0098628E /* NSDictionary+ConvertObject.m in Sources */,
+				C9E63A4A21B53F290098628E /* NetMananger+UpdateFile.m in Sources */,
 				C9E63A2B21B5162C0098628E /* NetRequestInfo.m in Sources */,
 				C9E63A2621B5162C0098628E /* MD5DataConvert.m in Sources */,
 				C9E63A2A21B5162C0098628E /* NetMananger+MultipleTask.m in Sources */,
